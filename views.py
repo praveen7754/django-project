@@ -3,20 +3,20 @@ from .forms import *
 
 def func(request):
     return render(request, "index.html")
-# Create your views here.
+ Create your views here.
 
-# def display(request):
-#     name="mukilan"
-#     return render(request,"index.html",{"name":name})
+ def display(request):
+    name="mukilan"
+    return render(request,"index.html",{"name":name})
 
-# def greet(request):
-#     data={"age":22}
-#     return render(request,"index.html",data)
+def greet(request):
+    data={"age":22}
+    return render(request,"index.html",data)
 
-# def ifelse(request):
-#     data={"name":"mukil",
-#           "mark":[10,20,30,40,50]}
-#     return render(request,"index.html",data)
+def ifelse(request):
+    data={"name":"mukil",
+          "mark":[10,20,30,40,50]}
+    return render(request,"index.html",data)
 
 def add_data(request):
     context={
@@ -69,6 +69,7 @@ def contact(request):
 
 def service(request):
     return render(request,"service.html")
+
 
 
 
